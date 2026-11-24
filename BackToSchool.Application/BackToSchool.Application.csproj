@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BackToSchool.core\BackToSchool.core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\mbos-logo.png" />
+      <!-- Fuente del N° de documento: su "I" tiene remates y no se confunde con un 1 (licencia SIL OFL). -->
+      <EmbeddedResource Include="Resources\IBMPlexSans-Regular.ttf" />
+      <EmbeddedResource Include="Resources\IBMPlexSans-Bold.ttf" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+      <PackageReference Include="ClosedXML" Version="0.105.1" />
+      <PackageReference Include="FluentValidation" Version="12.1.1" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.10" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.10" />
+      <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="8.22.0" />
+      <PackageReference Include="QRCoder" Version="1.6.0" />
+      <PackageReference Include="QuestPDF" Version="2026.8.0" />
+    </ItemGroup>
+
+</Project>
